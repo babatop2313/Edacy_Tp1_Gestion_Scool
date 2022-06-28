@@ -1,0 +1,37 @@
+<div class="container container_liste ">
+    <h2 id="title">Les classes du lycee d'axcellence de Dakar</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Niveau</th>
+                    <th scope="col">Batiment</th>
+                    <th scope="col">Salle</th>
+                    <th scope="col">Nommbre d'éléves</th>
+                    <th scope="col"><a href="#"> Ajouter</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let classe of Room">
+                    <td></td>
+                    <td>{{classe.niveau}} </td>
+                    <td>{{classe.batiment}}</td>
+                    <td>{{classe.salle}}</td>
+                    <td>{{classe.nbEL}} </td>
+                    <td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <a href=" ">
+                                <button type="button" class="btn update_btn">Modifier</button></a>
+                            <a href="#"> 
+                                <form action="" method="post" id="destroy-post-form">
+                                    
+                                    <button type="submit" class="btn delete_btn">Supprimer</button>
+                                </form>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>

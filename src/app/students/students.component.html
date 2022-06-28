@@ -1,0 +1,40 @@
+<div class="container container_liste ">
+    <h2 id="title">Les eleves du lycee d'axcellence de Dakar</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">identifiant</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Date de naissance</th>
+                <th scope="col">adresse</th>
+                <th scope="col">Classe</th>
+                <th scope="col"><a href="#"> Ajouter</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let stud of Student">
+                <td>{{stud.id}} </td>
+                <td>{{stud.Fname}} </td>
+                <td>{{stud.Lname}}</td>
+                <td>{{stud.birthday}}</td>
+                <td>{{stud.address}} </td>
+                <td>{{stud.room}} </td>
+                <td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a href=" ">
+                            <button type="button" class="btn update_btn">Modifier</button></a>
+                        <a href="#"> 
+                            <form action="" method="post" id="destroy-post-form">
+                                
+                                <button type="submit" class="btn delete_btn">Supprimer</button>
+                            </form>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
